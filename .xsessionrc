@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Load resources
+xrdb -merge .Xresources
+
+#Apps
+#My wallpaper
+#~/.fehbg 
+xsetroot -grey 
+
+xscreensaver -nosplash &
+
+setxkbmap -layout "us,lt,ru" -option "grp:ctrl_shift_toggle"
+
+
+exec twm
